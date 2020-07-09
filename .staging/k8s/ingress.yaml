@@ -1,0 +1,8 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: gke-demo-ing
+spec:
+  backend:
+    serviceName: gke-demo-svc # Name of the Service targeted by the Ingress
+    servicePort: 80 # Should match the port used by the Service

@@ -1,0 +1,21 @@
+{
+  "name": "gke-demo-app",
+  "version": "1.0.0",
+  "description": "GKE Demo App",
+  "author": "Matt Duffield <matt.duffield@gmail.com> (https://frontendcreator.com/)",
+  "private": true,
+  "repository": {
+    "url": "git+ssh://git@github.com/mattduffield/gke-demo-app.git",
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1"
+  }
+}

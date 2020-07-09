@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: IMAGE
+  name: IMAGE
+spec:
+  selector:
+    matchLabels:
+      run: IMAGE
+  replicas: 1 # number of pods
+  template:
+    metadata:
+      labels:
+        run: IMAGE
+    spec:
+      containers: # image gets updated during cloudbuild
+        - image: IMAGE
+          imagePullPolicy: Always
+          name: IMAGE
+          ports: # containerPort gets updated during cloudbuild
+            - containerPort: PORT
+              protocol: TCP
