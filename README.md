@@ -52,6 +52,12 @@ Simply commit and push your changes to trigger Cloud Build.
 
 If this is the first time you are committing, the build could take a while. Also, you will find that the creation of the Ingress can from 5-10 mintutes.
 
+If everything works, you can simply grab the endpoing from the Ingress service and test it in your browser:
+
+![Test App Image 1](docs/testing-app.png)
+
+
+
 ### Help
 
 Count number of distinct responses
