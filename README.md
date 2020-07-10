@@ -50,10 +50,7 @@ You are now ready to test your application!
 
 Simply commit and push your changes to trigger Cloud Build.
 
-
-
-
-
+If this is the first time you are committing, the build could take a while. Also, you will find that the creation of the Ingress can from 5-10 mintutes.
 
 ### Help
 

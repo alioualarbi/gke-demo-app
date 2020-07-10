@@ -69,7 +69,7 @@ steps:
         sed -i "s/name: IMAGE/name: $_IMAGE/g" .$_ENVIRONMENT/k8s/deployment.yaml
   # set targetPort in service.yaml
   - name: "gcr.io/cloud-builders/gcloud"
-    id: "Set targetPort"
+    id: "Set targetPort in service"
     entrypoint: /bin/sh
     args:
       - "-c"
